@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<div style="font-size:42pt" id="networkState"></div>
+
+<script type="text/javascript">
+    var networkState = document.getElementById("networkState");
+    setInterval(setTime, 100);
+
+    function setTime()
+    {
+        var str = "onLine: " + navigator.onLine;
+        networkState.innerHTML = str;
+    }
+</script>
+</body>
+</html>

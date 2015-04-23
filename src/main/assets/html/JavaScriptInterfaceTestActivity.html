@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<input value="1 get_byte()" onclick="javascript:describe(test.get_byte());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="1 get_short()" onclick="javascript:describe(test.get_short());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="'1' get_char()" onclick="javascript:describe(test.get_char());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="true get_boolean()" onclick="javascript:describe(test.get_boolean());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="1 get_int()" onclick="javascript:describe(test.get_int());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="2 get_long()" onclick="javascript:describe(test.get_long());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="3.5 get_float()" onclick="javascript:describe(test.get_float());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="4.5 get_double()" onclick="javascript:describe(test.get_double());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<br/>
+<input value="true get_Boolean()" onclick="javascript:describe(test.get_Boolean());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="1 get_Integer()" onclick="javascript:describe(test.get_Integer());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="2 get_Long()" onclick="javascript:describe(test.get_Long());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="+ get_Character()" onclick="javascript:describe(test.get_Character());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="1 get_IntegerAsObject()" onclick="javascript:describe(test.get_IntegerAsObject());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="str get_String()" onclick="javascript:describe(test.get_String());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="obj get_StringAsObject()" onclick="javascript:describe(test.get_StringAsObject());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="{'a', 'b', 'c'} get_charArray()" onclick="javascript:describe(test.get_charArray());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="{5, 6, 7} get_intArray()" onclick="javascript:describe(test.get_intArray());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="{15, 16, 17} get_IntegerArray()" onclick="javascript:describe(test.get_IntegerArray());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="{215, 216, 217} get_ObjectArray()" onclick="javascript:describe(test.get_ObjectArray());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="null get_null()" onclick="javascript:describe(test.get_null());" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="get_Exception()" onclick="javascript:test.get_Exception();" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<br/>
+<input value="put_byte(1)" onclick="javascript:test.put_byte(1);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_short(1)" onclick="javascript:test.put_short(1);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_char(1)" onclick="javascript:test.put_char(1);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_char('1')" onclick="javascript:test.put_char('1');" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_int(1)" onclick="javascript:test.put_int(1);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_long(1)" onclick="javascript:test.put_long(1);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_float(1.4)" onclick="javascript:test.put_float(1.4);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_double(2.4)" onclick="javascript:test.put_double(2.4);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_boolean(true)" onclick="javascript:test.put_boolean(true);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_Integer(Integer)" onclick="javascript:test.put_Integer(1);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_Boolean(true)" onclick="javascript:test.put_Boolean(true);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_String(String)" onclick="javascript:test.put_String('JS string');" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_charArray(char[])" onclick="javascript:test.put_charArray('JS char array');" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_Object(Object)" onclick="javascript:test.put_Object(1);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_int_int(int, int)" onclick="javascript:test.put_int_int(2, 3);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_intArray(int ...)" onclick="javascript:test.put_intArray(10, 5, 1);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_Overloaded(int)" onclick="javascript:test.put_Overloaded(3);" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_Overloaded(String)" onclick="javascript:test.put_Overloaded('33');" type="button"
+       style="width:300px; height:60px;"/>
+<br/>
+<input value="put_Overloaded(int, String)" onclick="javascript:test.put_Overloaded(4, '4');" type="button"
+       style="width:300px; height:60px;"/>
+<script type="text/javascript">
+    function describe(value)
+    {
+        alert('Type: '+ (typeof value) + '\nValue: ' + value);
+    }
+</script>
+
+</body>
+</html>

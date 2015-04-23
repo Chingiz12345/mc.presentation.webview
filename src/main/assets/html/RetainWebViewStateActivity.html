@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<div style="font-size:48pt" id="seconds">00</div>
+
+<script type="text/javascript">
+            var secondsLabel = document.getElementById("seconds");
+            var totalSeconds = 0;
+            setInterval(setTime, 1000);
+
+            function setTime()
+            {
+                ++totalSeconds;
+                secondsLabel.innerHTML = pad(totalSeconds);
+            }
+
+
+            function pad(val)
+            {
+                var valString = val + "";
+                if(valString.length < 2)
+                {
+                    return "0" + valString;
+                }
+                else
+                {
+                    return valString;
+                }
+            }
+
+</script>
+</body>
+</html>

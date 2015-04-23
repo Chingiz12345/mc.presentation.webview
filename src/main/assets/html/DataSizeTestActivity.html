@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<input type="button" value="get 1Mb image" onclick="getImage(1100);" style="padding: 15px 50px 15px 50px; margin-right: 20px;"/>
+<input type="button" value="put 1Mb image" onclick="putImage(1100);" style="padding: 15px 50px 15px 50px;"/>
+<br/><br/>
+<input type="button" value="get 1.6Mb image" onclick="getImage(1600);" style="padding: 15px 50px 15px 50px; margin-right: 20px;"/>
+<input type="button" value="put 1.6Mb image" onclick="putImage(1600);" style="padding: 15px 50px 15px 50px;"/>
+<br/><br/>
+<input type="button" value="get 2Mb image" onclick="getImage(2100);" style="padding: 15px 50px 15px 50px; margin-right: 20px;"/>
+<input type="button" value="put 2Mb image" onclick="putImage(2100);" style="padding: 15px 50px 15px 50px;"/>
+<br/><br/>
+<input type="button" value="get 3Mb image" onclick="getImage(3000);" style="padding: 15px 50px 15px 50px; margin-right: 20px;"/>
+<input type="button" value="put 3Mb image" onclick="putImage(3000);" style="padding: 15px 50px 15px 50px;"/>
+<br/><br/>
+<input type="button" value="get 4Mb image" onclick="getImage(4000);" style="padding: 15px 50px 15px 50px; margin-right: 20px;"/>
+<input type="button" value="put 4Mb image" onclick="putImage(4000);" style="padding: 15px 50px 15px 50px;"/>
+<br/><br/>
+<input type="button" value="get 5Mb image" onclick="getImage(5200);" style="padding: 15px 50px 15px 50px; margin-right: 20px;"/>
+<input type="button" value="put 5Mb image" onclick="putImage(5200);" style="padding: 15px 50px 15px 50px;"/>
+<br/><br/>
+<input type="button" value="get 6Mb image" onclick="getImage(6700);" style="padding: 15px 50px 15px 50px; margin-right: 20px;"/>
+<input type="button" value="put 6Mb image" onclick="putImage(6700);" style="padding: 15px 50px 15px 50px;"/>
+<br/><br/>
+<img id="image" width="300px" height="300px"/>
+
+<script type="text/javascript">
+            var image = document.getElementById("image");
+
+            function getImage(img)
+            {
+                alert(""+img);
+                img = test.getImage(img);
+                image.src = img;
+            }
+
+            function putImage(img)
+            {
+                var str = image.src;
+                var bytes = [];
+                for (var i = 0; i < str.length; ++i)
+                {
+                    bytes.push(img, str.charCodeAt(i));
+                }
+                test.checkImage(img, bytes);
+            }
+
+</script>
+</body>
+</html>
